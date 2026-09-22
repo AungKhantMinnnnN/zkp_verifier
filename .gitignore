@@ -23,10 +23,13 @@ Thumbs.db
 # IntelliJ/PyCharm/CLion
 .idea/
 
-# --- Environment/Secrets ---
+# --- Environment/Secrets & Local DBs ---
 # If you eventually add a .env file for database credentials or API keys
 .env
 .env.*
+*.key
+*.db
+*.db-journal
 
 # --- Debug/Profiling ---
 # If you use 'cargo kcov' or other coverage tools

@@ -19,6 +19,22 @@ thiserror = "1.0"
 anyhow = "1.0"
 ff = "0.13"
 
-# Networking
+# Networking & Async
 tokio = { version = "1", features = ["full"]}
+tokio-util = { version = "0.7", features = ["codec"] }
 futures = "0.3"
+bytes = "1"
+
+# Kafka Client
+rskafka = "0.6.0"
+
+# Security & Memory Protection
+zeroize = { version = "1.8", features = ["derive"] }
+
+# Persistent Storage
+rusqlite = { version = "0.32", features = ["bundled"] }
+
+# Data & Identification
+serde_json = "1.0"
+uuid = { version = "1.10", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
